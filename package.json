@@ -8,13 +8,15 @@
     "@testing-library/user-event": "^7.1.2",
     "husky": "^4.3.0",
     "lint-staged": "^10.3.0",
+    "polished": "^3.6.6",
     "prettier": "^2.1.2",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",
     "react-scripts": "3.4.3",
-    "redux": "^4.0.5"
+    "redux": "^4.0.5",
+    "styled-components": "^5.2.0"
   },
   "husky": {
     "hooks": {
@@ -32,7 +34,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "format": "prettier --write \"src/**/*.{js,jsx}\""
   },
   "eslintConfig": {
     "extends": [
@@ -57,10 +60,15 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
+    "@storybook/addon-a11y": "^6.0.21",
     "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-docs": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-knobs": "^6.0.21",
     "@storybook/addon-links": "^6.0.21",
     "@storybook/addon-storyshots": "^6.0.21",
+    "@storybook/addon-storysource": "^6.0.21",
+    "@storybook/addons": "^6.0.21",
     "@storybook/node-logger": "^6.0.21",
     "@storybook/preset-create-react-app": "^3.1.4",
     "@storybook/react": "^6.0.21",
