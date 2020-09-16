@@ -1,11 +1,11 @@
-import React from "react";
-
-import { TaskList } from "./TaskList";
 import * as TaskStories from "../Task/Task.stories";
 
+import React from "react";
+import { TaskList } from "./TaskList";
+
 export default {
+  title: "Component/TaskList",
   component: TaskList,
-  title: "TaskList",
   decorators: [(story) => <div style={{ padding: "3rem" }}>{story()}</div>],
 };
 

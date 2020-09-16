@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-
-import { Header } from "./Header";
 import "./page.css";
+
+import Header from "../../components/Header/Header";
+import PropTypes from "prop-types";
+import React from "react";
 
 export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <article>

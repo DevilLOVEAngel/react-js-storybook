@@ -49,7 +49,7 @@ const List = styled.ul`
 `;
 
 export default {
-  title: "Icon",
+  title: "Component/Icon",
   component: Icon,
 };
 
