@@ -1,9 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
+import { archiveTask, pinTask } from "../../lib/redux";
 
+import PropTypes from "prop-types";
+import React from "react";
 import Task from "../Task/Task";
 import { connect } from "react-redux";
-import { archiveTask, pinTask } from "../../lib/redux";
 
 export function TaskList({ loading, tasks, onPinTask, onArchiveTask }) {
   const events = {
