@@ -78,7 +78,7 @@ export const noLabels = () => (
 );
 
 noLabels.story = {
-  name: "no labels",
+  name: "No Labels",
 };
 
 export const inline = () => (

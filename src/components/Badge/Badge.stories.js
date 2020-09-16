@@ -30,7 +30,7 @@ export const allBadges = () => (
 );
 
 allBadges.story = {
-  name: "all badges",
+  name: "All Badges",
 };
 
 export const positive = () => <Badge status="positive">Positive</Badge>;
@@ -47,5 +47,5 @@ export const withIcon = () => (
 );
 
 withIcon.story = {
-  name: "with icon",
+  name: "With Icon",
 };
