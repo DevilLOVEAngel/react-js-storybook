@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
-import React from "react";
-import TaskList from "../../components/TaskList/TaskList";
-import { connect } from "react-redux";
+import PropTypes from 'prop-types';
+import React from 'react';
+import TaskList from '../../components/TaskList/TaskList';
+import { connect } from 'react-redux';
 
 export function InboxScreen({ error }) {
   if (error) {

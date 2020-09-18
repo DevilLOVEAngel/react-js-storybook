@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
-import { color, easing, typography } from "../../styles";
-import { darken, rgba } from "polished";
+import React, { Fragment } from 'react';
+import { color, easing, typography } from '../../styles';
+import { darken, rgba } from 'polished';
 
-import PropTypes from "prop-types";
-import styled from "styled-components";
+import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 const Text = styled.span`
   display: inline-block;
@@ -19,18 +19,18 @@ const Loading = styled.span`
 `;
 
 const APPEARANCES = {
-  PRIMARY: "primary",
-  PRIMARY_OUTLINE: "primaryOutline",
-  SECONDARY: "secondary",
-  SECONDARY_OUTLINE: "secondaryOutline",
-  TERTIARY: "tertiary",
-  OUTLINE: "outline",
+  PRIMARY: 'primary',
+  PRIMARY_OUTLINE: 'primaryOutline',
+  SECONDARY: 'secondary',
+  SECONDARY_OUTLINE: 'secondaryOutline',
+  TERTIARY: 'tertiary',
+  OUTLINE: 'outline',
 };
 
 const SIZES = {
-  SMALL: "small",
-  MEDIUM: "medium",
-  LARGE: "large",
+  SMALL: 'small',
+  MEDIUM: 'medium',
+  LARGE: 'large',
 };
 
 const StyledButton = styled.button`
@@ -40,7 +40,7 @@ const StyledButton = styled.button`
   display: inline-block;
   overflow: hidden;
   padding: ${(props) =>
-    props.size === SIZES.SMALL ? "8px 16px" : "13px 20px"};
+    props.size === SIZES.SMALL ? '8px 16px' : '13px 20px'};
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -90,12 +90,12 @@ const StyledButton = styled.button`
   }
 
   svg {
-    height: ${(props) => (props.size === SIZES.SMALL ? "14" : "16")}px;
-    width: ${(props) => (props.size === SIZES.SMALL ? "14" : "16")}px;
+    height: ${(props) => (props.size === SIZES.SMALL ? '14' : '16')}px;
+    width: ${(props) => (props.size === SIZES.SMALL ? '14' : '16')}px;
     vertical-align: top;
-    margin-right: ${(props) => (props.size === SIZES.SMALL ? "4" : "6")}px;
-    margin-top: ${(props) => (props.size === SIZES.SMALL ? "-1" : "-2")}px;
-    margin-bottom: ${(props) => (props.size === SIZES.SMALL ? "-1" : "-2")}px;
+    margin-right: ${(props) => (props.size === SIZES.SMALL ? '4' : '6')}px;
+    margin-top: ${(props) => (props.size === SIZES.SMALL ? '-1' : '-2')}px;
+    margin-bottom: ${(props) => (props.size === SIZES.SMALL ? '-1' : '-2')}px;
 
     /* Necessary for js mouse events to not glitch out when hovering on svgs */
     pointer-events: none;
@@ -150,7 +150,7 @@ const StyledButton = styled.button`
         display: block;
         margin: 0;
       }
-      padding: ${props.size === SIZES.SMALL ? "7" : "12"}px;
+      padding: ${props.size === SIZES.SMALL ? '7' : '12'}px;
     `}
 
   ${(props) =>
@@ -320,7 +320,7 @@ const StyledButton = styled.button`
       `};
 `;
 
-const ButtonLink = StyledButton.withComponent("a");
+const ButtonLink = StyledButton.withComponent('a');
 
 const applyStyle = (ButtonWrapper) => {
   return (
@@ -345,7 +345,7 @@ export function Button({
   const buttonInner = (
     <Fragment>
       <Text>{children}</Text>
-      {isLoading && <Loading>{loadingText || "Loading..."}</Loading>}
+      {isLoading && <Loading>{loadingText || 'Loading...'}</Loading>}
     </Fragment>
   );
 

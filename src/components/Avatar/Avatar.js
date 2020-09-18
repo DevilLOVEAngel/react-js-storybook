@@ -1,9 +1,9 @@
-import { color, glow, typography } from "../../styles";
-import styled, { css } from "styled-components";
+import { color, glow, typography } from '../../styles';
+import styled, { css } from 'styled-components';
 
-import { Icon } from "../Icon/Icon";
-import PropTypes from "prop-types";
-import React from "react";
+import { Icon } from '../Icon/Icon';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 export const sizes = {
   large: 40,
@@ -13,7 +13,7 @@ export const sizes = {
 };
 
 const Image = styled.div`
-  background: ${(props) => (!props.loading ? "transparent" : color.light)};
+  background: ${(props) => (!props.loading ? 'transparent' : color.light)};
   border-radius: 50%;
   display: inline-block;
   vertical-align: top;
@@ -25,7 +25,7 @@ const Image = styled.div`
   line-height: ${sizes.medium}px;
 
   ${(props) =>
-    props.size === "tiny" &&
+    props.size === 'tiny' &&
     css`
       height: ${sizes.tiny}px;
       width: ${sizes.tiny}px;
@@ -33,7 +33,7 @@ const Image = styled.div`
     `}
 
   ${(props) =>
-    props.size === "small" &&
+    props.size === 'small' &&
     css`
       height: ${sizes.small}px;
       width: ${sizes.small}px;
@@ -41,7 +41,7 @@ const Image = styled.div`
     `}
 
   ${(props) =>
-    props.size === "large" &&
+    props.size === 'large' &&
     css`
       height: ${sizes.large}px;
       width: ${sizes.large}px;
@@ -51,7 +51,7 @@ const Image = styled.div`
   ${(props) =>
     !props.src &&
     css`
-      background: ${!props.loading && "#37D5D3"};
+      background: ${!props.loading && '#37D5D3'};
     `}
 
   img {
@@ -108,12 +108,12 @@ export function Avatar({ loading, username, src, size, ...props }) {
   const a11yProps = {};
 
   if (loading) {
-    a11yProps["aria-busy"] = true;
-    a11yProps["aria-label"] = "Loading avatar ...";
+    a11yProps['aria-busy'] = true;
+    a11yProps['aria-label'] = 'Loading avatar ...';
   } else if (src) {
     avatarFigure = <img src={src} alt={username} />;
   } else {
-    a11yProps["aria-label"] = username;
+    a11yProps['aria-label'] = username;
     avatarFigure = (
       <Initial size={size} aria-hidden="true">
         {username.substring(0, 1)}
@@ -149,7 +149,7 @@ Avatar.propTypes = {
 
 Avatar.defaultProps = {
   loading: false,
-  username: "loading",
+  username: 'loading',
   src: null,
-  size: "medium",
+  size: 'medium',
 };

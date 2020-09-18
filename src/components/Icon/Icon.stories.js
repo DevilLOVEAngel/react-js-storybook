@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
-import styled, { css } from "styled-components";
+import React, { Fragment } from 'react';
+import styled, { css } from 'styled-components';
 
-import { Icon } from "./Icon";
-import { icons } from "../../styles";
+import { Icon } from './Icon';
+import { icons } from '../../styles';
 
 const Meta = styled.div`
   color: #666;
@@ -49,7 +49,7 @@ const List = styled.ul`
 `;
 
 export default {
-  title: "Component/Icon",
+  title: 'Component/Icon',
   component: Icon,
 };
 
@@ -78,7 +78,7 @@ export const noLabels = () => (
 );
 
 noLabels.story = {
-  name: "No Labels",
+  name: 'No Labels',
 };
 
 export const inline = () => (

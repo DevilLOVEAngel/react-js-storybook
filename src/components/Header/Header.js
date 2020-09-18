@@ -1,8 +1,8 @@
-import "./header.css";
+import './header.css';
 
-import { Button } from "../Button/Button";
-import PropTypes from "prop-types";
-import React from "react";
+import { Button } from '../Button/Button';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 export default function Header({ user, onLogin, onLogout, onCreateAccount }) {
   return (
@@ -46,7 +46,7 @@ export default function Header({ user, onLogin, onLogout, onCreateAccount }) {
                 primary
                 size="small"
                 onClick={onCreateAccount}
-                style={{ marginLeft: "1rem" }}
+                style={{ marginLeft: '1rem' }}
               >
                 Sign up
               </Button>

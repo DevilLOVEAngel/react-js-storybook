@@ -1,11 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "@testing-library/jest-dom/extend-expect";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import '@testing-library/jest-dom/extend-expect';
 
-import { WithPinnedTasks } from "./TaskList.stories";
+import { WithPinnedTasks } from './TaskList.stories';
 
-it("renders pinned tasks at the start of the list", () => {
-  const div = document.createElement("div");
+it('renders pinned tasks at the start of the list', () => {
+  const div = document.createElement('div');
   // Our story will be used for the test.
   // With the arguments that were created.
   ReactDOM.render(<WithPinnedTasks {...WithPinnedTasks.args} />, div);

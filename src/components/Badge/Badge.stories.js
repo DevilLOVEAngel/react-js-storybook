@@ -1,28 +1,28 @@
-import { Badge } from "./Badge";
-import { Icon } from "../Icon/Icon";
-import React from "react";
+import { Badge } from './Badge';
+import { Icon } from '../Icon/Icon';
+import React from 'react';
 
 export default {
-  title: "Component/Badge",
+  title: 'Component/Badge',
   component: Badge,
 };
 
 export const allBadges = () => (
   <div>
     <Badge status="positive">Positive</Badge>
-    <Badge status="negative" style={{ marginLeft: "1rem" }}>
+    <Badge status="negative" style={{ marginLeft: '1rem' }}>
       Negative
     </Badge>
-    <Badge status="neutral" style={{ marginLeft: "1rem" }}>
+    <Badge status="neutral" style={{ marginLeft: '1rem' }}>
       Neutral
     </Badge>
-    <Badge status="error" style={{ marginLeft: "1rem" }}>
+    <Badge status="error" style={{ marginLeft: '1rem' }}>
       Error
     </Badge>
-    <Badge status="warning" style={{ marginLeft: "1rem" }}>
+    <Badge status="warning" style={{ marginLeft: '1rem' }}>
       Warning
     </Badge>
-    <Badge status="positive" style={{ marginLeft: "1rem" }}>
+    <Badge status="positive" style={{ marginLeft: '1rem' }}>
       <Icon icon="facehappy" inline />
       with icon
     </Badge>
@@ -30,7 +30,7 @@ export const allBadges = () => (
 );
 
 allBadges.story = {
-  name: "All Badges",
+  name: 'All Badges',
 };
 
 export const positive = () => <Badge status="positive">Positive</Badge>;
@@ -47,5 +47,5 @@ export const withIcon = () => (
 );
 
 withIcon.story = {
-  name: "With Icon",
+  name: 'With Icon',
 };

@@ -1,9 +1,9 @@
-import { Icon } from "../Icon/Icon";
-import { Link } from "./Link";
-import React from "react";
-import { StoryLinkWrapper } from "../StoryLinkWrapper";
-import { action } from "@storybook/addon-actions";
-import styled from "styled-components";
+import { Icon } from '../Icon/Icon';
+import { Link } from './Link';
+import React from 'react';
+import { StoryLinkWrapper } from '../StoryLinkWrapper';
+import { action } from '@storybook/addon-actions';
+import styled from 'styled-components';
 
 const CustomLink = styled(Link)`
   && {
@@ -11,10 +11,10 @@ const CustomLink = styled(Link)`
   }
 `;
 
-const onLinkClick = action("onLinkClick");
+const onLinkClick = action('onLinkClick');
 
 export default {
-  title: "Component/Link",
+  title: 'Component/Link',
   component: Link,
 };
 
@@ -51,7 +51,7 @@ export const all = () => (
       With arrow behind
     </Link>
     <br />
-    <span style={{ background: "#333" }}>
+    <span style={{ background: '#333' }}>
       <Link inverse href="https://learnstorybook.com">
         Inverted colors
       </Link>

@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
-import styled, { css } from "styled-components";
+import React, { Fragment } from 'react';
+import styled, { css } from 'styled-components';
 
-import { Icon } from "../Icon/Icon";
-import PropTypes from "prop-types";
-import { color } from "../../styles";
-import { darken } from "polished";
+import { Icon } from '../Icon/Icon';
+import PropTypes from 'prop-types';
+import { color } from '../../styles';
+import { darken } from 'polished';
 
 const linkStyles = css`
   display: inline-block;

@@ -1,9 +1,9 @@
-import { archiveTask, pinTask } from "../../lib/redux";
+import { archiveTask, pinTask } from '../../lib/redux';
 
-import PropTypes from "prop-types";
-import React from "react";
-import Task from "../Task/Task";
-import { connect } from "react-redux";
+import PropTypes from 'prop-types';
+import React from 'react';
+import Task from '../Task/Task';
+import { connect } from 'react-redux';
 
 export function TaskList({ loading, tasks, onPinTask, onArchiveTask }) {
   const events = {
@@ -46,8 +46,8 @@ export function TaskList({ loading, tasks, onPinTask, onArchiveTask }) {
   }
 
   const tasksInOrder = [
-    ...tasks.filter((t) => t.state === "TASK_PINNED"),
-    ...tasks.filter((t) => t.state !== "TASK_PINNED"),
+    ...tasks.filter((t) => t.state === 'TASK_PINNED'),
+    ...tasks.filter((t) => t.state !== 'TASK_PINNED'),
   ];
 
   return (
@@ -77,7 +77,7 @@ TaskList.defaultProps = {
 export default connect(
   ({ tasks }) => ({
     tasks: tasks.filter(
-      (t) => t.state === "TASK_INBOX" || t.state === "TASK_PINNED"
+      (t) => t.state === 'TASK_INBOX' || t.state === 'TASK_PINNED'
     ),
   }),
   (dispatch) => ({

@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import React from "react";
+import PropTypes from 'prop-types';
+import React from 'react';
 
 export default function Task({
   task: { id, title, state },
@@ -11,7 +11,7 @@ export default function Task({
       <label className="checkbox">
         <input
           type="checkbox"
-          defaultChecked={state === "TASK_ARCHIVED"}
+          defaultChecked={state === 'TASK_ARCHIVED'}
           disabled={true}
           name="checked"
         />
@@ -23,12 +23,12 @@ export default function Task({
           value={title}
           readOnly={true}
           placeholder="Input title"
-          style={{ textOverflow: "ellipsis" }}
+          style={{ textOverflow: 'ellipsis' }}
         />
       </div>
 
       <div className="actions" onClick={(event) => event.stopPropagation()}>
-        {state !== "TASK_ARCHIVED" && (
+        {state !== 'TASK_ARCHIVED' && (
           // eslint-disable-next-line jsx-a11y/anchor-is-valid
           <a onClick={() => onPinTask(id)}>
             <span className={`icon-star`} />

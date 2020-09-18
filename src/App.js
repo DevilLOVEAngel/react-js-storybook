@@ -1,9 +1,9 @@
-import "./App.css";
+import './App.css';
 
-import { InboxScreen } from "./screens/InboxScreen";
-import { Provider } from "react-redux";
-import React from "react";
-import logo from "./logo.svg";
+import { InboxScreen } from './screens/InboxScreen';
+import { Provider } from 'react-redux';
+import React from 'react';
+import logo from './logo.svg';
 
 function App() {
   return (
