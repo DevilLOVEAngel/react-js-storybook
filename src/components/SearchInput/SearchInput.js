@@ -9,7 +9,7 @@ export default function SearchInput({ ...props }) {
       <LabelSearchBox>
         <SearchBox>
           <i className="fal fa-search"></i>
-          <input id={props.id} placeholder={props.placeholder} />
+          <InputSearchBox id={props.id} placeholder={props.placeholder} />
         </SearchBox>
         <label htmlFor={props.id || props.name}>{props.label}</label>
       </LabelSearchBox>
@@ -19,7 +19,7 @@ export default function SearchInput({ ...props }) {
 
 const SearchBox = styled.div`
   display: flex;
-  padding: 0.5 rem;
+  padding: 0.5rem;
   border: 1px solid ${(props) => props.theme.borderColor};
   align-items: center;
   -webkit-box-align: center;
@@ -44,7 +44,7 @@ const LabelSearchBox = styled.div`
 const InputSearchBox = styled.input`
   border: 0;
   flex: 1 1 auto;
-  margin-left: 0.5 rem;
+  margin-left: 0.5rem;
 `;
 
 SearchInput.propTypes = {
