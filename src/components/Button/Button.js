@@ -54,7 +54,11 @@ const StyledButton = styled.button`
   background: transparent;
 
   font-size: ${(props) =>
-    props.size === SIZES.SMALL ? typography.size.s1 : typography.size.s2}px;
+    props.size === SIZES.SMALL
+      ? typography.size.s1
+      : props.size === SIZES.MEDIUM
+      ? typography.size.s2
+      : typography.size.s3}px;
   font-weight: ${typography.weight.extrabold};
   line-height: 1;
 
@@ -345,7 +349,7 @@ export function Button({
   const buttonInner = (
     <Fragment>
       <Text>{children}</Text>
-      {isLoading && <Loading>{loadingText || 'Loading...'}</Loading>}
+      {isLoading && <i class="fa fa-spinner fa-spin"></i>}
     </Fragment>
   );
 
